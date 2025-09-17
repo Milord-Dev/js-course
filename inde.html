@@ -14,25 +14,22 @@
     <!--Contenido Principal-->
     <main>
         <article>
-            <form action="" class="formulario-contenedor">
-                <div>
+            <form action="#">
+                <div class="item-form">
                     <label for="nombre">nombre</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
-                <div>
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="item-form">
+                    <label for="tamano">Tamaño del juego</label>
+                    <select name="tamano" id="tamano">
+                        <option value="">--Elige el tamaño del juego--</option>
+                        <option value="1">4x4</option>
+                        <option value="2">5x5</option>
+                        <option value="3">6x6</option>
+                    </select>
                 </div>
-                <div>
-                    <label for="password">password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div>
-                    <label for="confirm-password">confirm password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
+                <div class="item-form">
+                    <button type="submit">Jugar</button>
                 </div>
             </form>
         </article>
