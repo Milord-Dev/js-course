@@ -7,18 +7,40 @@
 </head>
 <body>
     <!--Cabecera-->
-    <header>
-
+    <header id="header-contenedor">
+        <img src="/assets/img/logo.png" alt="Logo de Mastermind">
+        <h1>Mastermind</h1>
     </header>
     <!--Contenido Principal-->
     <main>
         <article>
-
+            <form action="" class="formulario-contenedor">
+                <div>
+                    <label for="nombre">nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirm-password">confirm password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
         </article>
     </main>
     <!--Pie de Página-->
     <footer>
-
+        <p>Curso de HTML,CSS Y JS</p>
+        <p>&copy; 2023 Mastermind. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
