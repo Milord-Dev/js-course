@@ -12,3 +12,9 @@ main{
     width: 100%;
     margin: 30px auto;
 }
+button{
+    font-family: poppins,sans-serif;
+}
+select{
+    font-family: poppins,sans-serif;
+}
