@@ -23,7 +23,13 @@ label{
 }
 input{
     display: inline;
-    padding: 5px;
+    font-family: poppins,sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
 }
 button{
     font-family: poppins,sans-serif;
