@@ -8,13 +8,22 @@ header,footer{
     margin: 30px auto;
 }
 main{
-    width: 400px;
+    width: 300px;
     margin: 30px auto;
 }
 form{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    font-size: 18px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    display: inline;
+    padding: 5px;
 }
 button{
     font-family: poppins,sans-serif;
