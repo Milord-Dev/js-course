@@ -11,6 +11,11 @@ main{
     width: 400px;
     margin: 30px auto;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
 button{
     font-family: poppins,sans-serif;
 }
