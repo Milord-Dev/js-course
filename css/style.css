@@ -31,8 +31,13 @@ input{
     font-size: 18px;
     font-weight: 400;
 }
-button{
-    font-family: poppins,sans-serif;
+input[type="submit"]{
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #E94560;
+    font-size: 16px;
+    font-weight: 400;
 }
 select{
     font-family: poppins,sans-serif;
@@ -41,5 +46,9 @@ select{
     width: 100%;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: 400;
+}
+footer{
+    font-size: 16px;
     font-weight: 400;
 }
