@@ -69,7 +69,10 @@ footer{
     font-size: 18px;
     font-weight: 400;
 }
-
 #email{
     width: 277px;
+    border-radius: 5px;
+}
+#tamano{
+    border-radius: 5px;
 }
