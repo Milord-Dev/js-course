@@ -7,6 +7,9 @@ header,footer{
     width: 100%;
     margin: 30px auto;
 }
+header{
+    margin-bottom: 50px;
+}
 main{
     width: 300px;
     margin: 30px auto;
@@ -14,7 +17,7 @@ main{
 form{
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
     font-size: 18px;
     justify-content: center;
 }
@@ -30,7 +33,7 @@ input{
     width: 236px;
     border-radius: 0px 5px 5px 0px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
 }
 input[type="submit"]{
     width: 100%;
@@ -38,7 +41,8 @@ input[type="submit"]{
     color: #fff;
     background-color: #E94560;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
+    margin-bottom: 20px;
 }
 select{
     font-family: poppins,sans-serif;
@@ -47,7 +51,7 @@ select{
     width: 100%;
     border-radius: 5px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
 }
 footer{
     font-size: 16px;
@@ -64,4 +68,8 @@ footer{
     padding: 10px;
     font-size: 18px;
     font-weight: 400;
+}
+
+#email{
+    width: 277px;
 }
