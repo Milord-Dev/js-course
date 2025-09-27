@@ -8,5 +8,5 @@ for( let edadGato = 1; edadGato <= 22; edadGato++){
     }else{
         edadHumana +=  4;
     }
-    console.log(`El gato tiene ${edadHumana} años en edad humana`);
+    console.log(`El gato tiene ${edadGato} años en edad gato y ${edadHumana} años en edad humana`);
 }
