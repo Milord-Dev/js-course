@@ -4,6 +4,6 @@ console.log('----------------------------');
 let estatura = 165; //cm
 let peso = 60; //kg
 
-for(let i = 0; i <= 7; i++){
-    console.log(i);
+for(let estatura = 165; estatura <= 180; estatura += 5){
+    console.log(estatura);
 }
