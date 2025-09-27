@@ -1,0 +1,1 @@
+confirm("Quiere continuar con la ejecución?")
