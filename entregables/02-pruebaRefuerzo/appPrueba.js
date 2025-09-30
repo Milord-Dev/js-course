@@ -6,6 +6,7 @@ for(let altura = 165; altura <= 195; altura = altura + 5){
     let pesomax = 80 + (altura - 165);
     
     for(let peso = pesomin; peso <= pesomax; peso = peso + 10){
-        console.log(`Altura: ${altura} cm - Peso: ${peso}`);
+        imc = peso / ((altura/100) * (altura/100));
+        console.log(`Altura: ${altura} cm - Peso: ${peso} kg - IMC: ${imc}`);
     }
 };
