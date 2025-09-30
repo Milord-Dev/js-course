@@ -1,6 +1,11 @@
 console.log('-- INDICE DE MASA CORPORAL --');
 console.log('----------------------------');
 
-for(let i = 1; i <= 50; i =+ 5){
-    console.log(i);
-}
+for(let altura = 165; altura <= 195; altura = altura + 5){
+    let pesomin = 60;
+    let pesomax = 80;
+    
+    for(let peso = pesomin; peso <= pesomax; peso = peso + 10){
+        console.log(`Altura: ${altura} cm - Peso: ${peso}`);
+    }
+};
