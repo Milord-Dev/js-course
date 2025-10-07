@@ -6,4 +6,4 @@ function arbol(numPisos) {
         console.log(espacios + estrellas);
     }
 }
-arbol(4);
+arbol(5);
