@@ -1,6 +1,6 @@
-const listItem = document.getElementsByTagName("tr");
+const listItems = document.getElementsByTagName("tr");
 console.log(document.nodeType);
 
-for (listItems of listItem) {
-    console.log(listItems.nodeType);
+for (const listItem of listItems) {
+    console.log(listItem.nodeType);
 }
