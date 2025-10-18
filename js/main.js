@@ -3,5 +3,5 @@
 */ 
 
 // Capturar el valor del input
-const nickInput =Document.getElementById('nick');
-console.log(nickInput.nodetype);
+const nickInput = document.getElementById('nick');
+console.log(nickInput.nodeType);
