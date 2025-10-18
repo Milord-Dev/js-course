@@ -13,8 +13,15 @@ console.log("Saca el texto de la seleccion del usuario: " + tamanoItem.options[t
 */ 
 
 // Variables
-let nickUsuario = "";
-let correoElectronico = "";
-let tamanoJuego = "";
+const nickUsuario = document.getElementById('nick');
+const correoElectronico = document.getElementById('email');
+const tamanoJuego = document.getElementById('tamano');
 
-// Comprobacion de formulario
+// Comprobacion del valor de las variables
+function validarFormulario(){
+    console.log ("El nick del usuario es: " + nickUsuario.value);
+    console.log ("El correo electronico es: " + correoElectronico.value);
+    console.log ("El tamaño del juego es: " + tamanoJuego.value);
+}
+// Llamada a la funcion
+validarFormulario();    
