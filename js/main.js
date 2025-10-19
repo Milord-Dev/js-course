@@ -23,5 +23,5 @@ function validarFormulario(){
     console.log ("El correo electronico es: " + correoElectronico.value);
     console.log ("El tamaño del juego es: " + tamanoJuego.value);
 }
-// Llamada a la funcion
+
 validarFormulario();    
