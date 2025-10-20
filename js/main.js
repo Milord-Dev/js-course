@@ -25,3 +25,7 @@ function validarFormulario(){
 }
 
 validarFormulario();    
+
+function prueba(){
+    console.log("Funciona el boton");
+}
