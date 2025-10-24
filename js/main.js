@@ -13,10 +13,11 @@ function comprobacionForm(event){
     if (nickInput.value.length == 0 || correoInput.value.length == 0 || tamanoInput.value.length == 0){
         alert('Por favor, rellena todos los campos');
         console.log('Faltan campos por rellenar');
+        event.preventDefault();
     }else{
         alert('Formulario enviado correctamente');
+        event.preventDefault();
     }
-    event.preventDefault();
 }
 
 //Evento
