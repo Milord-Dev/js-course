@@ -3,17 +3,15 @@
  */
 
 //variables
-const BtnJugar = document.getElementById('btn_jugar');
-const inputEmail = document.getElementById('email');
+const nickInput = document.getElementById('nick');
+const correoInput = document.getElementById('email');
+const tamanoInput = document.getElementById('tamano');
+const formulario = document.getElementById('formularioEntrada');
 
 //Funciones
-function comprobacion(){
-    console.log("Función comprobación iniciada");
+function comprobacionForm(){
+    console.log('Formulario enviado');
 }
 
-function validarCorreo(){
-    console.log(inputEmail.value);
-}
-
-//Eventos
-BtnJugar.addEventListener('click', comprobacion, validarCorreo);
+//Evento
+formulario.addEventListener('submit', comprobacionForm)
