@@ -22,6 +22,7 @@ function validarFormulario(){
     console.log ("El nick del usuario es: " + nickUsuario.value);
     console.log ("El correo electronico es: " + correoElectronico.value);
     console.log ("El tamaño del juego es: " + tamanoJuego.value);
+    console.log(tamanoJuego.options[tamanoJuego.selectedIndex].text);
 }
 
 validarFormulario();    
@@ -29,4 +30,9 @@ validarFormulario();
 //Prueba en donde se usa el on click para ver que funciona el evento 
 function prueba(){
     console.log("Funciona la prueba");
+}
+
+//Funcion para validar el correo electronico
+function validarCorreo(){
+    console.log("El correo electronico es: " + correoElectronico.value);
 }
