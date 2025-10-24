@@ -26,3 +26,7 @@ function validarFormulario(){
 
 validarFormulario();    
 
+//Prueba en donde se usa el on click para ver que funciona el evento 
+function prueba(){
+    console.log("Funciona la prueba");
+}
