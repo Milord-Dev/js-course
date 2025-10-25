@@ -16,8 +16,8 @@ function comprobacionForm(event){
         event.preventDefault();
     }
     else if (tamanoInput.value == "0"){
-        alert('Por favor, selecciona un tamaño de pizza');
-        console.log('No se ha seleccionado un tamaño de pizza');
+        alert('Por favor, selecciona un tamaño del juego');
+        console.log('No se ha seleccionado un tamaño del juego');
         event.preventDefault();
     }
     else{
