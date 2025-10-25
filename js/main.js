@@ -10,7 +10,7 @@ const formulario = document.getElementById('formularioEntrada');
 
 //Funciones
 function comprobacionForm(event){
-    if (nickInput.value.length == 0 || correoInput.value.length == 0 || tamanoInput.value.length == 0){
+    if (nickInput.value.length == 0 || correoInput.value.length == 0 || tamanoInput.value.length == "0"){
         alert('Por favor, rellena todos los campos');
         console.log('Faltan campos por rellenar');
         event.preventDefault();
