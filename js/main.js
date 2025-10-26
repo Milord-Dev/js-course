@@ -14,16 +14,21 @@ function comprobacionForm(event){
         alert('Por favor, rellena todos los campos');
         console.log('Faltan campos por rellenar');
         event.preventDefault();
+        nickInput.focus();
+        return false;
     }
     else if (tamanoInput.value == "0"){
         alert('Por favor, selecciona un tamaño del juego');
         console.log('No se ha seleccionado un tamaño del juego');
         event.preventDefault();
+        tamanoInput.focus();
+        return false;
     }
     else{
         alert('Formulario enviado correctamente');
         event.preventDefault();
     }
+    return true;
 }
 
 //Evento
