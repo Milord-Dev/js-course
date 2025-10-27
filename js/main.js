@@ -6,6 +6,7 @@
 const nickInput = document.getElementById('nick');
 const correoInput = document.getElementById('email');
 const tamanoInput = document.getElementById('tamano');
+const edadInput = document.getElementById('edad');
 const formulario = document.getElementById('formularioEntrada');
 
 //Funciones
@@ -22,6 +23,13 @@ function comprobacionForm(event){
         console.log('No se ha seleccionado un tamaño del juego');
         event.preventDefault();
         tamanoInput.focus();
+        return false;
+    }
+    else if (edadInput.value < 7 || edadInput.value > 99){
+        alert('Por favor, introduce una edad válida (entre 7 y 99 años)');
+        console.log('edad no valida');
+        event.preventDefault();
+        edadInput.focus();
         return false;
     }
     else{
