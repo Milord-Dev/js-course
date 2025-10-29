@@ -10,6 +10,11 @@ const tamanoInput = document.getElementById('tamano');
 const formulario = document.getElementById('formularioEntrada');
 const error = document.getElementById('error'); 
 
+//comprobacion de null 
+if (!nickInput || !correoInput || !edadInput || !tamanoInput || !formulario || !error){
+    console.error('No se han podido obtener todos los elementos del DOM necesarios');
+}
+
 //Funciones
 function comprobacionForm(event){
     if (nickInput.value.length < 4 || correoInput.value.length == 0){
