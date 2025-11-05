@@ -45,4 +45,4 @@ function comprobacionForm(event){
 }
 
 //Evento
-formulario.addEventListener('submit', comprobacionForm)
+formulario.addEventListener('submit', comprobacionForm);
