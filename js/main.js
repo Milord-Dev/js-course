@@ -17,9 +17,16 @@ if (!nickInput || !correoInput || !edadInput || !tamanoInput || !formulario || !
 
 //Funciones
 function comprobacionForm(event){
-    if (nickInput.value.length < 4 || correoInput.value.length == 0){
+    if (nickInput.value.length < 4){
         console.log('Faltan campos por rellenar');
         nickInput.focus();
+        event.preventDefault();
+        error.innerText = 'Por favor, rellena todos los campos obligatorios';
+        return false;
+    }
+    else if (correoInput.value.length == 0){
+        console.log('Faltan campos por rellenar');
+        correoInput.focus();
         event.preventDefault();
         error.innerText = 'Por favor, rellena todos los campos obligatorios';
         return false;
