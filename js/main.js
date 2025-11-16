@@ -31,7 +31,7 @@ function comprobacionForm(event){
         error.innerText = 'Por favor, rellena todos los campos obligatorios';
         return false;
     }
-    else if (edadInput.value < 7 || edadInput.value > 99){
+    else if (edadInput.value < 7 || edadInput.value > 80){
         console.log('edad no valida');
         edadInput.focus();
         error.innerText = 'Por favor, introduce una edad válida (entre 7 y 99 años)';
