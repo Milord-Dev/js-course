@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio de Juego</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!--Cabecera-->
+        <header id="header-contenedor">
+            <img src="./assets/img/logo.png" alt="Logo de Mastermind">
+            <h1>Mastermind</h1>
+        </header>
+        <!--Contenido Principal-->
+        <main>
+            <article>
+                <!--Mensaje de Error-->
+                <div id="error">
+                    <p></p>
+                </div>
+                <!--Formulario-->
+                <form action="juego.html" id="formularioEntrada">
+                    <div class="item-form">
+                        <label for="nick">Introduce tu nick</label>
+                        <input type="text" id="nicka" name="nicka" value="@" readonly>
+                        <input type="text" id="nick" name="nick" placeholder="example_05">
+                    </div>
+
+                    <div class="item-form">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="yo@example.com">
+                    </div>
+
+                    <div class="item-form">
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" placeholder="ingrese su edad">
+                    </div>
+
+                    <div class="item-form">
+                        <label for="tamano">Tamaño del juego</label>
+                        <select name="tamano" id="tamano">
+                            <option value="0">--Elige el tamaño del juego--</option>
+                            <option value="1">4x4</option>
+                            <option value="2">5x5</option>
+                            <option value="3">6x6</option>
+                        </select>
+                    </div>
+
+                    <div class="item-form">
+                        <input type="submit" value="Jugar" id="btn_jugar">
+                    </div>
+                </form>
+            </article>
+        </main>
+        <!--Pie de Página-->
+        <footer>
+            <p>Curso de HTML,CSS Y JS</p>
+            <p>&copy; 2023 Mastermind. Todos los derechos reservados.</p>
+        </footer>
+        <!--Script-->
+        <script src="./entregable_main.js"></script>
+    </body>
+</html>
