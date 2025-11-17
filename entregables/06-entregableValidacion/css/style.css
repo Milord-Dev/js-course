@@ -80,6 +80,10 @@ footer{
     width: 278px;
     border-radius: 5px;
 }
-#plataforma{
-    border-radius: 5px;
+#error{
+    text-align: center;
+    color: #E94560;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
 }
