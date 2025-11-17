@@ -17,29 +17,25 @@ if (!nickInput || !correoInput || !edadInput || !tamanoInput || !formulario || !
 
 //Funciones
 function comprobacionForm(event){
-    if (nickInput.value.length < 4 && nickInput.value.length > 15){
-        console.log('Faltan campos por rellenar o nick no valido');
+    if (nickInput.value.match(/[0-9]/)){
         nickInput.focus();
         event.preventDefault();
-        error.innerText = 'Por favor, rellena todos los campos obligatorios';
+        error.innerText = 'El nick no puede contener números';
         return false;
     }
     else if (correoInput.value.length == 0){
-        console.log('Faltan campos por rellenar');
         correoInput.focus();
         event.preventDefault();
         error.innerText = 'Por favor, rellena todos los campos obligatorios';
         return false;
     }
     else if (edadInput.value < 7 || edadInput.value > 80){
-        console.log('edad no valida');
         edadInput.focus();
         error.innerText = 'Por favor, introduce una edad válida (entre 7 y 80 años)';
         event.preventDefault();
         return false;
     }
     else if (tamanoInput.value == "0"){
-        console.log('No se ha seleccionado un tamaño del juego');
         tamanoInput.focus();
         error.innerText = 'Por favor, selecciona un tamaño del juego';
         event.preventDefault();
