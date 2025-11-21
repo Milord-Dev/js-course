@@ -13,4 +13,23 @@ function validacionFormulario(event){
         event.preventDefault();
         return false;
     }
+    else if (emailInput.value.length == 0 || emailInput.value.length > 50){
+        error.innerText = 'El email no puede estar vacio y debe tener menos de 50 caracteres';
+        emailInput.focus();
+        event.preventDefault();
+        return false;
+    }
+    else if (passwordInput.value.length < 8 || passwordInput.value.length > 20){
+        error.innerText = 'La contraseña debe tener entre 8 y 20 caracteres';
+        passwordInput.focus();
+        event.preventDefault();
+        return false;
+    }
+    else {
+        alert('Formulario enviado correctamente');
+    }
+    return true;
 }
+
+//Evento
+formulario.addEventListener('submit', validacionFormulario);
