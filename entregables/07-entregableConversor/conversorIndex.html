@@ -14,15 +14,27 @@
             </div>
             <!--Conversor-->
             <div class="container">
-                <section>
+                <div>
+                    <label for="">Seleccione el valor: </label>
+                    <select name="" id="">
+                        <option value="0">--Seleccione--</option>
+                        <option value="1">Dolares</option>
+                        <option value="2">Euros</option>
+                    </select>
+                    <label for="">Ingrese el valor: </label>
+                    <input type="number" id="" placeholder="Ingrese el valor">
+                </div>
 
-                </section>
-                <section>
+                <div>
+                    <input type="submit" value="Convertir" id="btn_convertit">
+                </div>
 
-                </section>
-                <section>
-
-                </section>
+                <div>
+                    <label for="">El valor convertido es: </label>
+                    <input type="number" id="monedaYenes" placeholder="Yen: " readonly>
+                    <input type="number" id="monedaNuevaZenlandes" placeholder="Dolar(nz): " readonly>
+                    <input type="number" id="monedaLibraEsterlina" placeholder="Libra Esterlina: " readonly>
+                </div>
             </div>
             <!--Footer-->
             <footer>
