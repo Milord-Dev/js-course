@@ -1,7 +1,7 @@
 //Constantes
 const formulario = document.getElementById('formularioUsuario');
 const nickInput = document.getElementById('nick');
-const emailInput = document.getElementById('emaik');
+const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const btnEnviar = document.getElementById('btn_enviar');
 
