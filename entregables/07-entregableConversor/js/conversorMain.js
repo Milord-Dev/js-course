@@ -10,13 +10,10 @@ const resultadoLibra = document.getElementById('monedaLE');
 
 //Funciones para convertir monedas
 function seleccionMoneda(){
-    if (monedaSelect.value === 'dolar'){
-        function convertirDolar() {
-
-        }
-    } else if (monedaSelect.value === 'euro'){
-        function convertirEuro() {
-
-        }
+    if (monedaSelect.value === '1'){
+        
+    }
+    else if (monedaSelect.value === '2'){
+        
     }
 };
