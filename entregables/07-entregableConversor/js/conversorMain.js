@@ -9,6 +9,6 @@ const resultadoDolarNZ = document.getElementById('monedaNZ');
 const resultadoLibra = document.getElementById('monedaLE');
 
 //Funciones para convertir monedas
-function convertirMoneda(event){
+function seleccionMoneda(){
     
 };
