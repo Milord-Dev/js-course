@@ -25,3 +25,6 @@ function seleccionMoneda(){
         error.innerText = 'Seleccione una moneda válida';
     }
 };
+
+//Evento para el botón convertir
+btnConvertir.addEventListener('click', seleccionMoneda())
