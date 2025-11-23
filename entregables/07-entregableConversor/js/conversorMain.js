@@ -12,14 +12,14 @@ const error = document.getElementById('error');
 //Funciones para convertir monedas
 function seleccionMoneda(){
     if (monedaSelect.value === '1'){
-        resultadoYen.value = cantidadInput.value * 154.12;
-        resultadoDolarNZ.value = cantidadInput.value * 1.78;
-        resultadoLibra.value = cantidadInput.value * 0.80;
+        resultadoYen.value = parseFloat(cantidadInput.value) * 154.12
+        resultadoDolarNZ.value = parseFloat(cantidadInput.value) * 1.78;
+        resultadoLibra.value = parseFloat(cantidadInput.value) * 0.80;
     }
     else if (monedaSelect.value === '2'){
-        resultadoYen.value = cantidadInput.value * 169.14;
-        resultadoDolarNZ.value = cantidadInput.value * 1.95;
-        resultadoLibra.value = cantidadInput.value * 0.88;
+        resultadoYen.value = parseFloat(cantidadInput.value) * 169.14;
+        resultadoDolarNZ.value = parseFloat(cantidadInput.value) * 1.95;
+        resultadoLibra.value = parseFloat(cantidadInput.value) * 0.88;
     }
     else{
         error.innerText = 'Seleccione una moneda válida';
