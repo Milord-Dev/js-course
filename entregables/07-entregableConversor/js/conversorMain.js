@@ -27,4 +27,4 @@ function seleccionMoneda(){
 };
 
 //Evento para el botón convertir
-btnConvertir.addEventListener('click', seleccionMoneda())
+btnConvertir.addEventListener('click', seleccionMoneda)
