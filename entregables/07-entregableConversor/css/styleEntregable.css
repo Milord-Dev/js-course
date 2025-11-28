@@ -7,11 +7,14 @@ header,footer{
     width: 100%;
     margin: 30px auto;
 }
+main{
+    width: 300px;
+    margin: 30px auto;
+}
 form{
     display:flex;
     flex-direction: column;
     row-gap: 20px;
     font-size: 18px;
     justify-content: center;
-    text-align: center;
 }
