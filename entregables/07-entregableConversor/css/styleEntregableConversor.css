@@ -17,3 +17,14 @@ header h1 a{
     text-decoration: none;
     color: #F0EBD8;
 }
+main{
+    width: 500px;
+    margin: 10px auto;
+}
+/*CLASS*/
+.bloqueSelector{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+/*ID*/
