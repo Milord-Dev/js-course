@@ -21,10 +21,25 @@ main{
     width: 500px;
     margin: 10px auto;
 }
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+p{
+    font-size: 18px;
+    font-weight: 600;
+}
 /*CLASS*/
 .bloqueSelector{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+}
+.bloqueResultado{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 30px;
 }
 /*ID*/
