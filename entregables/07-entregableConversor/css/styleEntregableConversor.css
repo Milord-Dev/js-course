@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     background-color: #1D2D44;
     color: #F0EBD8;
@@ -45,11 +48,21 @@ footer{
 .bloqueBoton{
     margin-top: 25px;
 }
+.campo{
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin-bottom: 10px;
+}
+.campo img {
+    width: 20px;
+    height: auto;
+}
 /*ID*/
 #moneda{
     padding: 10px;
     width: 100%;
-    border: 1px solid #ccc;;
+    border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 200;
@@ -65,7 +78,7 @@ footer{
 #cantidadUsuario{
     padding: 10px;
     width: 100%;
-    border: 1px solid #ccc;;
+    border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 200;
@@ -73,7 +86,7 @@ footer{
 #monedaYen, #monedaNZ, #monedaLE{
     padding: 10px;
     width: 100%;
-    border: 1px solid #ccc;;
+    border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 200;
