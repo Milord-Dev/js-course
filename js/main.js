@@ -53,3 +53,5 @@ function comprobacionForm(event){
 
 //Evento
 formulario.addEventListener('submit', comprobacionForm);
+
+//Continuar con el desarrollo de la aplicacion...
