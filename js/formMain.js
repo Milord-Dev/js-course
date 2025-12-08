@@ -48,6 +48,8 @@ function comprobacionForm(event){
     else{
         alert('Formulario enviado correctamente');
     }
+    //Guardar el nick en sessionStorage
+    datosUsuario(nickInput)
     return true;
 }
 
