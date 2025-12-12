@@ -1,0 +1,3 @@
+function datosUsuario() {
+    sessionStorage.setItem()
+}
