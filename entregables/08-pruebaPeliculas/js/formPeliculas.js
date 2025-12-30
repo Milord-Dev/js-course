@@ -1,6 +1,6 @@
 /**
- *  Aqui van las vadilaciones del formulario de usuario.
- */
+    *  Aqui van las vadilaciones del formulario de usuario.
+*/
 //variables 
 const nickInput = document.getElementById('nick');
 const emailInput = document.getElementById('email');
@@ -12,3 +12,5 @@ const formulario = document.getElementById('formularioPelicula');
 const error = document.getElementById('error');
 
 //comprobacion de null
+
+//Funciones de Validacion
