@@ -36,4 +36,18 @@ function comprobarForm(event){
         error.innerText = 'La edad debe estar entre 13 y 80 años';
         return false;
     }
+    else if (selectInputAnime.value === '' && selectInputRomance.value === '' && selectInputkDrama.value === ''){
+        selectInputAnime.focus();
+        event.PreventDefault();
+        error.innerText = 'Debes seleccionar al menos un genero de pelicula';
+        return false;
+    }
+    // Si todo es correcto
+    else{
+        error.innerText = '';
+        datosUsuario(nickInput)
+        return true;
+    }
 }
+//Evento al enviar el formulario
+formulario.addEventListener('submit', comprobarForm);
