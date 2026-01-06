@@ -18,27 +18,27 @@ if (!nickInput || !emailInput || !edadInput || !selectInputAnime || !selectInput
 
 //Funciones de Validacion
 function comprobarForm(event){
-    if (nickInput.value.match(/[0-9]/)){
+    if (!/^[a-zA-Z_]+$/.test(nickInput.value)){
         nickInput.focus();
-        event.PreventDefault();
+        event.preventDefault();
         error.innerText = 'El nick no puede contener numeros';
         return false;
     }
     else if (emailInput.value.length == 0){
         emailInput.focus();
-        event.PreventDefault();
+        event.preventDefault();
         error.innerText = 'Por favor, rellena todos los campos obligatorios';
         return false;
     }
     else if (edadInput.value < 13 || edadInput.value > 80){
         edadInput.focus();
-        event.PreventDefault();
+        event.preventDefault();
         error.innerText = 'La edad debe estar entre 13 y 80 años';
         return false;
     }
-    else if (selectInputAnime.value === '' && selectInputRomance.value === '' && selectInputkDrama.value === ''){
+    else if (selectInputAnime.value === '0' || selectInputRomance.value === '0' || selectInputkDrama.value === '0'){
         selectInputAnime.focus();
-        event.PreventDefault();
+        event.preventDefault();
         error.innerText = 'Debes seleccionar al menos un genero de pelicula';
         return false;
     }
