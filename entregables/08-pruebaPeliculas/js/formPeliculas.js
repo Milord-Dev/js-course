@@ -45,7 +45,7 @@ function comprobarForm(event){
     // Si todo es correcto
     else{
         error.innerText = '';
-        datosUsuario(nickInput)
+        datosUsuario(nickInput, selectInputAnime, selectInputRomance, selectInputkDrama);
         return true;
     }
 }
