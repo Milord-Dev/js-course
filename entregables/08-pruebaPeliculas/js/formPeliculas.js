@@ -44,8 +44,13 @@ function comprobarForm(event){
     }
     // Si todo es correcto
     else{
+        // Obtener los textos seleccionados de los selects
+        const generoAnimeTexto = selectInputAnime.options[selectInputAnime.selectedIndex].text;
+        const generoRomanceTexto = selectInputRomance.options[selectInputRomance.selectedIndex].text;
+        const generoKDramaTexto = selectInputkDrama.options[selectInputkDrama.selectedIndex].text;
+        
         error.innerText = '';
-        datosUsuario(nickInput, selectInputAnime, selectInputRomance, selectInputkDrama);
+        datosUsuario(nickInput, generoAnimeTexto, generoRomanceTexto, generoKDramaTexto);
         return true;
     }
 }
