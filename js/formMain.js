@@ -15,6 +15,12 @@ if (!nickInput || !correoInput || !edadInput || !tamanoInput || !formulario || !
     console.error('No se han podido obtener todos los elementos del DOM necesarios');
 }
 
+//Comprobacion de error de inicio de sesion
+const errorInicio = sessionStorage.getItem('errorForm');
+if (errorInicio){
+    error.innerText = errorInicio;
+}
+
 //Funciones
 function comprobacionForm(event){
     if (nickInput.value.length < 4 && nickInput.value.length > 15){

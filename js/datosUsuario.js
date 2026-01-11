@@ -18,6 +18,7 @@ function getDatosUsuario(){
 //funcion para comprobar si el usuario ya tiene una sesión iniciada
 function comprobarUsuario(){
     if (nick === null || nick === undefined || nick === '') {
+        sessionStorage.setItem('errorForm', 'Debes iniciar sesión para acceder al juego');
         return false;
     }
     else{
