@@ -19,6 +19,8 @@ if (!nickInput || !correoInput || !edadInput || !tamanoInput || !formulario || !
 const errorInicio = sessionStorage.getItem('errorForm');
 if (errorInicio){
     error.innerText = errorInicio;
+    //Eliminar el error de sessionStorage
+    sessionStorage.removeItem('errorForm');
 }
 
 //Funciones
