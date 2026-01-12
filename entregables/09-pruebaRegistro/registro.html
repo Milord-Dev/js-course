@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registro de Usuario</title>
+        <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/styleRegistro.css">
     </head>
     <body>
@@ -20,12 +21,50 @@
 
             <!--Formulario de registro-->
             <article>
-                
+                <div id="bloque-Formulario">
+                    <form action="inicio.html" id="formularioEntrada">
+                        <div class="objetoFormulario">
+                            <label for="nick">Nombre de usuario</label>
+                            <input type="text" id="nicka" name="nicka" value="@" readonly>
+                            <input type="text" id="nick" name="nick" placeholder="example_05">
+                        </div>
+                        
+                        <div class="objetoFormulario">
+                            <label for="correo">Correo electronico</label>
+                            <input type="text" id="correoUsuario" name="correo" placeholder="yo@example.com">
+                        </div>
+
+                        <div class="objetoFormulario">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" id="contrasenaUsuario" name="contrasena">
+                        </div>
+
+                        <div class="objetoFormulario">
+                            <label for="edad">Edad</label>
+                            <input type="number" id="edadUsuario" name="edad" placeholder="Ingrese su edad">
+                        </div>
+                            
+                        <div class="objetoFormulario">
+                            <label for="tamano">Tamaño del juego</label>
+                            <select name="tamano" id="tamano">
+                                <option value="0">--Elige el tamaño del juego--</option>
+                                <option value="1">4x4</option>
+                                <option value="2">5x5</option>
+                                <option value="3">6x6</option>
+                            </select>
+                        </div>
+
+                        <div class="objetoFormulario">
+                            <input type="submit" value="Enviar" id="btn_enviar">
+                        </div>
+                    </form>
+                </div>
             </article>
         </main>
         <!-- Pie de página -->
         <footer>
-
+            <p>Curso de HTML,CSS Y JS</p>
+            <p>&copy; 2023 Milord. Todos los derechos reservados.</p>
         </footer>
         <!-- Scripts -->
         <script src="./js/datosUsuarios.js"></script>
