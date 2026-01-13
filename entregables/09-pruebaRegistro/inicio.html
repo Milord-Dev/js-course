@@ -8,13 +8,48 @@
         <link rel="stylesheet" href="./css/styleInicio.css">
     </head>
     <body>
+        <!-- Encabezado -->
         <header>
-
+            <div>
+                Bienvenido
+            </div>
         </header>
+        <!-- Contenido principal -->
         <main>
+            <!--Mensaje de Error-->
+            <div id="error">
+                <p></p>
+            </div>
+
+            <!--Contenido principal-->
             <article>
-                
+                <div id="bloque-Contenido">
+                    <div class="objetoContenido">
+                        <label for="nickUsuario">Nombre de Usuario</label>
+                        <input type="text" id="nickUsuario" readonly>
+                    </div>
+
+                    <div class="objetoContenido">
+                        <label for="correoUsuario">Correo de Usuario</label>
+                        <input type="text" id="correoUsuario" readonly>
+                    </div>
+
+                    <div class="objetoContenido">
+                        <label for="edadUsuario">Edad del Usuario</label>
+                        <input type="number" id="edadUsuario" readonly>
+                    </div>
+                </div>
             </article>
         </main>
+        
+        <!-- Pie de página -->
+        <footer>
+            <p>Curso de HTML,CSS Y JS</p>
+            <p>&copy; 2023 Milord. Todos los derechos reservados.</p>
+        </footer>
+
+        <!--Scripts-->
+        <script src="./js/datosUsuarios.js"></script>
+        <script src="./js/inicio.js"></script>
     </body>
 </html>
