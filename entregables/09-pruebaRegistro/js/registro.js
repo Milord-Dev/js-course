@@ -16,5 +16,28 @@ if(!nickInput || !correoInput || !contrasenaInput || !edadInput || !tamanoInput 
 
 //FUNCIONES DE COMPROBACIÓN
 function comprobarFormulario(event){
-    
+    if(!/^[a-zA-Z_]+$/.test(nickInput.value)){
+        nickInput.focus();
+        event.preventDefault();
+        error.innerText = 'El nick no puede contener numeros';
+        return false;
+    }
+    else if(correoInput.value.length() == 0){
+        correoInput.focus();
+        event.preventDefault();
+        error.innerText = 'Por favor, rellena todos los campos obligatorios';
+        return false;
+    }
+    else if(edadInput.value < 13 || edadInput.value > 80){
+        edadInput.focus();
+        event.preventDefault();
+        error.innerText = 'La edad debe estar entre 13 y 80 años';
+        return false;
+    }
+    else if(tamanoInput.value == "0"){
+        tamanoInput.focus();
+        event.preventDefault();
+        error.innerText = 'Por favor, selecciona un tamaño del juego';
+        return false;
+    }
 }
