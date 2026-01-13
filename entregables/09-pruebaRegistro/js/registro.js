@@ -11,10 +11,10 @@ const error = document.getElementById('error')
 
 //COMPROBACION DE NULL EN LOS ELEMENTOS
 if(!nickInput || !correoInput || !contrasenaInput || !edadInput || !tamanoInput || !formulario || !error){
-    
+    console.error('No se han podido obtener todos los elementos del DOM necesarios')
 }
 
 //FUNCIONES DE COMPROBACIÓN
 function comprobarFormulario(event){
-
+    
 }
