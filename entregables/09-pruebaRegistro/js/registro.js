@@ -40,4 +40,10 @@ function comprobarFormulario(event){
         error.innerText = 'Por favor, selecciona un tamaño del juego';
         return false;
     }
+    // SI ES CORRECTO PASARA ESTO
+    else{
+        error.innerText = '';
+        return true;
+    }
 }
+formulario.addEventListener('submit',comprobarFormulario);
