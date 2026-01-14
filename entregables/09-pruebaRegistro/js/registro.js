@@ -22,8 +22,14 @@ function comprobarFormulario(event){
         error.innerText = 'El nick no puede contener numeros';
         return false;
     }
-    else if(correoInput.value.length() == 0){
+    else if(correoInput.value.length == 0){
         correoInput.focus();
+        event.preventDefault();
+        error.innerText = 'Por favor, rellena todos los campos obligatorios';
+        return false;
+    }
+    else if(contrasenaInput.value.length == 0){
+        contrasenaInput.focus();
         event.preventDefault();
         error.innerText = 'Por favor, rellena todos los campos obligatorios';
         return false;
