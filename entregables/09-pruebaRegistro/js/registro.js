@@ -48,7 +48,11 @@ function comprobarFormulario(event){
     }
     // SI ES CORRECTO PASARA ESTO
     else{
+        //obetener el texto del select
+        const tamanoTexto = tamanoInput.options[tamanoInput.selectedIndex].text;
+
         error.innerText = '';
+        datosUsuarios(nickInput,correoInput,edadInput,tamanoTexto);
         return true;
     }
 }
