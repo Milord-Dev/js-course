@@ -8,6 +8,7 @@ function datosUsuarios(nick,correo,edad,tamanoTexto){
     sessionStorage.setItem('tamano', tamanoTexto);
 }
 
+//Funcion rapida para comprobar si todo funciona
 /*function mostrarDatos(){
     const nickGuardado = sessionStorage.getItem('nick');
     const correoGuardado = sessionStorage.getItem('correo');
