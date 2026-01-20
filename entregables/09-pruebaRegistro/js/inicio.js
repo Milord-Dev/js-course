@@ -1,13 +1,13 @@
 //Donde captaremos lo datos de usuarios
 
-// variables globales 
+//variables
 const nickGuardado = sessionStorage.getItem('nick');
 const correoGuardado = sessionStorage.getItem('correo');
 const edadGuardada = sessionStorage.getItem('edad');
 const tamanoGuardado = sessionStorage.getItem('tamano');
 
 //comprobacion para ver si el usuario esta logeado
-if(!comprobarFormulario()){
+if(!comprobarUsuario()){
     window.location.href = 'registro.html';
 }
 

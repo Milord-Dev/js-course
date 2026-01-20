@@ -13,7 +13,6 @@ const error = document.getElementById('error');
 const errorForm = sessionStorage.getItem('errorFormulario');
 if(errorForm){
     error.innerText = errorForm; //HACE QUE EL OBJETO ERROR DEL HTML RECIBA EL MENSAJE DE ERROR
-
     //LO ELIMINA DESPUES DE SER COMPROBADO PARA DEJAR LIMPIO
     sessionStorage.removeItem(errorForm);
 }

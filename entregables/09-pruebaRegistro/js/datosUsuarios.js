@@ -1,4 +1,6 @@
 // AQUI VAMOS A CAPTAR O GUARDAR LOS DATOS DEL USUARIO PARA EL SESSIONSTORAGE 
+//variable
+let nick //se pone global para que la funcion tambien resiva el parametro
 
 function datosUsuarios(nick,correo,edad,tamanoTexto){
     //llave valor
