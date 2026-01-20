@@ -14,7 +14,7 @@ const errorForm = sessionStorage.getItem('errorFormulario');
 if(errorForm){
     error.innerText = errorForm; //HACE QUE EL OBJETO ERROR DEL HTML RECIBA EL MENSAJE DE ERROR
     //LO ELIMINA DESPUES DE SER COMPROBADO PARA DEJAR LIMPIO
-    sessionStorage.removeItem(errorForm);
+    sessionStorage.removeItem('errorFormulario');
 }
 
 //COMPROBACION DE NULL EN LOS ELEMENTOS

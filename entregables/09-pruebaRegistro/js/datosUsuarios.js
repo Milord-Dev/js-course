@@ -1,6 +1,4 @@
 // AQUI VAMOS A CAPTAR O GUARDAR LOS DATOS DEL USUARIO PARA EL SESSIONSTORAGE 
-//variable
-let nick //se pone global para que la funcion tambien resiva el parametro
 
 function datosUsuarios(nick,correo,edad,tamanoTexto){
     //llave valor
@@ -12,6 +10,7 @@ function datosUsuarios(nick,correo,edad,tamanoTexto){
 
 //COMPROBACION DEL FORMULARIO
 function comprobarUsuario(){
+    const nick = sessionStorage.getItem('nick');
     if(nick === null || nick === undefined || nick === ''){
         sessionStorage.setItem('errorFormulario', 'Debes iniciar sesión para acceder al inicio');
         return false;
