@@ -6,6 +6,11 @@ const correoGuardado = sessionStorage.getItem('correo');
 const edadGuardada = sessionStorage.getItem('edad');
 const tamanoGuardado = sessionStorage.getItem('tamano');
 
+//comprobacion para ver si el usuario esta logeado
+if(!comprobarFormulario()){
+    window.location.href = 'registro.html';
+}
+
 nickUsuario.value = nickGuardado;
 correoUsuario.value = correoGuardado;
 edadUsuario.value = edadGuardada;

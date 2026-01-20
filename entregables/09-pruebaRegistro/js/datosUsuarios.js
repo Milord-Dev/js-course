@@ -8,6 +8,17 @@ function datosUsuarios(nick,correo,edad,tamanoTexto){
     sessionStorage.setItem('tamano', tamanoTexto);
 }
 
+//COMPROBACION DEL FORMULARIO
+function comprobarUsuario(){
+    if(nick === null || nick === undefined || nick === ''){
+        sessionStorage.setItem('errorFormulario', 'Debes iniciar sesión para acceder al inicio');
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
 //Funcion rapida para comprobar si todo funciona
 /*function mostrarDatos(){
     const nickGuardado = sessionStorage.getItem('nick');

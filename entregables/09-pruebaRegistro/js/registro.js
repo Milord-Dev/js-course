@@ -6,15 +6,21 @@ const correoInput = document.getElementById('correo');
 const contrasenaInput = document.getElementById('contrasena');
 const edadInput = document.getElementById('edad');
 const tamanoInput = document.getElementById('tamano');
-const formulario = document.getElementById('formularioEntrada')
-const error = document.getElementById('error')
+const formulario = document.getElementById('formularioEntrada');
+const error = document.getElementById('error');
 
-//Comprobacion de inicio de sesion 
+//MENSAJE DE ERROR DE INICIO
+const errorForm = sessionStorage.getItem('errorFormulario');
+if(errorForm){
+    error.innerText = errorForm; //HACE QUE EL OBJETO ERROR DEL HTML RECIBA EL MENSAJE DE ERROR
 
+    //LO ELIMINA DESPUES DE SER COMPROBADO PARA DEJAR LIMPIO
+    sessionStorage.removeItem(errorForm);
+}
 
 //COMPROBACION DE NULL EN LOS ELEMENTOS
 if(!nickInput || !correoInput || !contrasenaInput || !edadInput || !tamanoInput || !formulario || !error){
-    console.error('No se han podido obtener todos los elementos del DOM necesarios')
+    console.error('No se han podido obtener todos los elementos del DOM necesarios');
 }
 
 //FUNCIONES DE COMPROBACIÓN
