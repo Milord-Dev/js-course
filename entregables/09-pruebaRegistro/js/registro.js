@@ -9,6 +9,11 @@ const tamanoInput = document.getElementById('tamano');
 const formulario = document.getElementById('formularioEntrada')
 const error = document.getElementById('error')
 
+//Comprobacion de inicio de sesion 
+function comprobarForm(){
+    
+}
+
 //COMPROBACION DE NULL EN LOS ELEMENTOS
 if(!nickInput || !correoInput || !contrasenaInput || !edadInput || !tamanoInput || !formulario || !error){
     console.error('No se han podido obtener todos los elementos del DOM necesarios')
