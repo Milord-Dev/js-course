@@ -1,7 +1,7 @@
 const nickUsuario = document.getElementById('nickUsuario');
 const correoUsuario = document.getElementById('correoUsuario');
 const edadUsuario = document.getElementById('edadUsuario');
-const tamanoUsuario = document.getElementById('tamanoUsuario');//Donde captaremos lo datos de usuarios
+const tamanoUsuario = document.getElementById('tamanoUsuario');
 
 //variables
 const nickGuardado = sessionStorage.getItem('nick');
