@@ -1,9 +1,9 @@
 //Crear funciones para que guardar la sesión del usuario
 
-//variable global 
+//variable global (es posible ya que tenemos los datos de los usuarios)
 let nick;
 
-//funcion para guardar los datos del usuario
+//funcion para guardar los datos del usuario (en especifico el nick)
 function datosUsuario(nick){
     sessionStorage.setItem('nick', nick.value);
 }
