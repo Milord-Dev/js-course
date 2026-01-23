@@ -1,9 +1,10 @@
+//variables de los elementos del DOM
 const nickUsuario = document.getElementById('nickUsuario');
 const correoUsuario = document.getElementById('correoUsuario');
 const edadUsuario = document.getElementById('edadUsuario');
 const tamanoUsuario = document.getElementById('tamanoUsuario');
 
-//variables
+//variables de session
 const nickGuardado = sessionStorage.getItem('nick');
 const correoGuardado = sessionStorage.getItem('correo');
 const edadGuardada = sessionStorage.getItem('edad');

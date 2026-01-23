@@ -1,6 +1,6 @@
 //JS PARA LA COMPRIBACION DE REGISTRO
 
-//VARIBLES
+//Inicializacion de objetos (elementos) del DOM
 const nickInput = document.getElementById('nick');
 const correoInput = document.getElementById('correo');
 const contrasenaInput = document.getElementById('contrasena');
