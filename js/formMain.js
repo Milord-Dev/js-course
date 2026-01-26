@@ -57,7 +57,9 @@ function comprobacionForm(event){
         alert('Formulario enviado correctamente');
     }
     //Guardar el nick en sessionStorage
-    datosUsuario(nickInput)
+    datosUsuario(nickInput);
+    //Llamar el registro de los usuario
+    historicoUsuario();
     return true;
 }
 

@@ -25,3 +25,12 @@ function comprobarUsuario(){
         return true;
     }
 }
+
+//Local Storage para guardar el historial del usuario
+function historicoUsuario(nick){
+    const registroUsuario = {
+        nombreUsuario: nick.value,
+        fechaUsuario: Date.now()
+    }
+
+}
