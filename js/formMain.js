@@ -1,6 +1,6 @@
 /**
- *  Iniciaremos con el verdadero desarrollo de nuestra aplicación
- */
+    *  Iniciaremos con el verdadero desarrollo de nuestra aplicación
+*/
 
 //variables
 const nickInput = document.getElementById('nick');
